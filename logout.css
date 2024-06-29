@@ -19,9 +19,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     display: flex;
-    width: 800px;
-    max-width: 100%;
-    min-height: 480px;
+    flex-direction: column;
+    width: 25%;
+    min-height: auto;
     overflow: hidden;
 }
 
@@ -30,23 +30,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    background: #f6f5f7;
+    width: 100%;
+    background: #f6f5f700;
     position: relative;
 }
 
 .image-container .logo {
-    width: 250px;
-    margin-top: -45px;
-    margin-bottom: -100px;
-    margin-left: -175px;
+    display: none; 
 }
 
 .image-container .background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 300px;
     margin-top: 0;
+    margin-bottom: -353px;
+    margin-left: 162px;
+    object-fit: cover;
+    opacity: 0.2;
 }
 
 .form-container {
@@ -54,8 +53,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     padding: 20px;
+    z-index: 1;
 }
 
 form {
@@ -69,6 +69,7 @@ form {
 h1 {
     font-weight: bold;
     margin-bottom: 15px;
+    z-index: 1;
 }
 
 p {
@@ -77,6 +78,7 @@ p {
     line-height: 20px;
     letter-spacing: 0.5px;
     margin: 20px 0 30px;
+    z-index: 1;
 }
 
 button {
@@ -92,6 +94,7 @@ button {
     transition: all 0.7s ease;
     margin: 10px 0;
     cursor: pointer;
+    z-index: 1;
 }
 
 button:hover {
@@ -112,39 +115,7 @@ button:focus {
     color: rgb(118, 159, 205);
 }
 
-@media only screen and (max-width: 430px) {
-    .container {
-        flex-direction: column;
-        width: 100%;
-        min-height: auto;
-    }
-    .image-container {
-        background: #f6f5f700;
-
-    }
-    h1{
-        z-index: 1;
-    }
-    button{
-        z-index: 1;
-    }
-    p{
-        z-index: 1;
-    }
-
-    .image-container .background-image{
-        margin-bottom: -353px;
-        margin-left: 162px;
-        width: 300px;
-        opacity: 0.2;
-    }
-    .image-container .logo {
-        display: none; 
-    }
-    .form-container {
-        width: 100%;
-        padding: 20px;
-    }
+#signupLink {
+    text-decoration: none;
+    color: rgb(118, 159, 205);
 }
-        
-
